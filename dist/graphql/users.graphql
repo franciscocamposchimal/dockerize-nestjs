@@ -1,0 +1,22 @@
+type User {
+  id: ID!
+  email: String!
+  post: [Post!]
+  createdAt: String!
+  updatedAt: String!
+}
+
+type AuthPayload {
+  id: ID!
+  email: String!
+}
+
+input signupInput {
+  email: String!
+  password: String!
+}
+
+input LoginInput {
+  email: String!
+  password: String!
+}
